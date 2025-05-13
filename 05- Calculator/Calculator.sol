@@ -13,8 +13,13 @@ contract Calculator{
         return(_number1-_number2);
     }
 
-    function multiplication(uint256 _number1, uint256 _number2) public pure returns(uint245){
+    function multiplication(uint256 _number1, uint256 _number2) public pure returns(uint256){
         return(_number1*_number2);
+    }
+
+    function division(uint256 _number1, uint256 _number2) public pure returns(uint256){
+        require(_number2 >0, "cannot divided by zero");
+        return (_number1/_number2);
     }
 
     
